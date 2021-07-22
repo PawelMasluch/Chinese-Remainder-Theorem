@@ -77,11 +77,10 @@ LL reverse_modulo(LL a, LL n){
 		w -= q*z;
 		
 		
-		if( w < z ){ // we change the equations' order
-			std::swap( u, x );
-			std::swap( v, y );
-			std::swap( w, z );
-		}
+		// we change the equations' order
+		std::swap( u, x );
+		std::swap( v, y );
+		std::swap( w, z );
 	}
 	
 	return (u >= 0) ? u: u+n; // the result is in variable "u"
